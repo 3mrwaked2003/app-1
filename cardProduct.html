@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="icon" href="img/login-1.jpg" />
+    <title>app-1 || cart</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-100" >
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="text-3xl font-bold text-blue-600">
+          Shopping
+        </a>
+
+       
+
+       <nav class="flex items-center gap-6">
+  <ul id="links">
+    <li class="flex items-center gap-4">
+      <a
+        href="login.html"
+        class="text-gray-600 hover:text-blue-600 transition p-1"
+      >sign in</a>
+      <a
+        href="register.html"
+        class="text-gray-600 hover:text-blue-600 transition p-1"
+      >sign up</a>
+    </li>
+  </ul>
+
+  <ul id="user_info" class="flex items-center gap-4 relative">
+    <li>
+      <a
+        href="#"
+        id="user"
+        class="text-gray-700 font-medium hover:text-blue-600 transition"
+      ></a>
+    </li>
+
+    <li class="relative group" id="cart">
+      <div class="flex items-center cursor-pointer">
+        <i
+          id="cartIn"
+          class="fa-solid fa-cart-shopping text-xl text-gray-700 hover:text-blue-600 transition"
+        ></i>
+      </div>
+    </li>
+
+    <li>
+      <a
+                      id="logOut"
+
+        href="#"
+        class="text-gray-700 hover:text-red-500 font-medium transition"
+      >Log Out</a>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </header>
+
+    <section class="sec4 py-12 bg-gray-100 flex-grow">
+      <div class="container mx-auto px-4">
+        <div
+          id="products"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+        ></div>
+      </div>
+    </section>
+
+
+
+      <!-- ------------------- -->
+    <button
+      onclick="scrollToTop()"
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 z-50 hidden bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- ------------------- -->
+    <footer
+       class="bg-gradient-to-tr from-indigo-900 via-blue-600 to-indigo-900 text-white py-16 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start"
+      >
+        <div>
+          <a href="index.html" class="text-3xl font-bold text-white">
+            Shopping❄️
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 text-2xl">
+          <a
+            href="https://www.facebook.com/share/16jp48VgCJ/"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/3mrwaked?igsh=MTJzNjY2MW80ZjR3ZA=="
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@3mrwaked?_t=ZS-8yfud2fjlVR&_r=1"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a
+            href="https://github.com/3mrwaked2003"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="space-y-3 text-sm text-gray-300">
+          <p>
+            <a
+              href="tel:+201028511637"
+              class="hover:underline flex items-center"
+            >
+              <i class="fas fa-phone-alt mr-2 text-green-400"></i> +20
+              1028511637
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://wa.me/201557223441"
+              target="_blank"
+              class="hover:underline flex items-center"
+            >
+              <i class="fab fa-whatsapp mr-2 text-green-500"></i> +20 1557223441
+            </a>
+          </p>
+          <p>
+            <a
+              href="mailto:3mrwaked2003@gmail.com"
+              class="hover:underline flex items-center"
+            >
+              <i class="fas fa-envelope mr-2 text-blue-400"></i>
+              3mrwaked2003@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="mt-12 text-center text-xs text-gray-400 border-t border-white/10 pt-4"
+      >
+        © 2025 3mrwaked. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+
+    <script src="js/user.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

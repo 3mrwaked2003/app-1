@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="icon" href="img/8eb656ee4829bbf6709a724b36def067.jpg" />
+    <link
+      rel="stylesheet"
+      href="css/icons css/fontawesome-free-6.6.0-web/css/all.css"
+    />
+    <title>App-1 | Register</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="text-3xl font-bold text-blue-600"
+          >Shopping</a
+        >
+
+        <nav class="flex items-center gap-6">
+          <div class="md:hidden">
+            <button
+              id="menu-toggle"
+              class="text-2xl text-gray-700 focus:outline-none"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <ul id="links" class="hidden md:flex items-center gap-4">
+            <li>
+              <a
+                href="login.html"
+                class="text-gray-600 hover:text-blue-600 transition p-1"
+                >Sign in</a
+              >
+            </li>
+            <li>
+              <a
+                href="register.html"
+                class="text-gray-600 hover:text-blue-600 transition p-1"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+
+          <ul id="user_info" class="hidden">
+            <li><a href="#" id="user"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden px-4 py-2 bg-white shadow-md border-t border-gray-200"
+    >
+      <ul class="space-y-2">
+        <li>
+          <a href="login.html" class="block text-gray-700 hover:text-blue-600"
+            >Sign in</a
+          >
+        </li>
+        <li>
+          <a
+            href="register.html"
+            class="block text-gray-700 hover:text-blue-600"
+            >Sign up</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section
+      class="min-h-screen flex items-center justify-center bg-gray-100 pt-16"
+    >
+      <div
+        class="w-full max-w-md p-8 bg-white border border-gray-300 rounded-2xl shadow-xl"
+      >
+        <h2 class="text-2xl font-bold text-center mb-6 text-blue-600">
+          Login Page
+        </h2>
+        <form action="" method="POST" class="space-y-4">
+          <input
+            type="text"
+            placeholder="Enter your username"
+            id="username"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <div class="box">
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <input type="checkbox" id="show" />
+            <label for="show" class="eye1"
+              ><i class="fa-regular fa-eye"></i
+            ></label>
+            <label for="show" class="eye2"
+              ><i class="fa-regular fa-eye-slash"></i
+            ></label>
+          </div>
+
+          <input
+            type="submit"
+            id="sign_up"
+            value="Send"
+            class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-200 cursor-pointer"
+          />
+        </form>
+      </div>
+    </section>
+
+
+      <!-- ------------------- -->
+   
+    <footer
+      class="bg-gradient-to-tr from-indigo-900 via-blue-600 to-indigo-900 text-white py-16 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start"
+      >
+        <div>
+          <a href="index.html" class="text-3xl font-bold text-white">
+            Shopping❄️
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 text-2xl">
+          <a
+            href="https://www.facebook.com/share/16jp48VgCJ/"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/3mrwaked?igsh=MTJzNjY2MW80ZjR3ZA=="
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@3mrwaked?_t=ZS-8yfud2fjlVR&_r=1"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a
+            href="https://github.com/3mrwaked2003"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="space-y-3 text-sm text-gray-300">
+          <p>
+            <a
+              href="tel:+201028511637"
+              class="hover:underline flex items-center"
+            >
+              <i class="fas fa-phone-alt mr-2 text-green-400"></i> +20
+              1028511637
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://wa.me/201557223441"
+              target="_blank"
+              class="hover:underline flex items-center"
+            >
+              <i class="fab fa-whatsapp mr-2 text-green-500"></i> +20 1557223441
+            </a>
+          </p>
+          <p>
+            <a
+              href="mailto:3mrwaked2003@gmail.com"
+              class="hover:underline flex items-center"
+            >
+              <i class="fas fa-envelope mr-2 text-blue-400"></i>
+              3mrwaked2003@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="mt-12 text-center text-xs text-gray-400 border-t border-white/10 pt-4"
+      >
+        © 2025 3mrwaked. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>
